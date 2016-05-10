@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Angular Real Estate App Concept</title>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    
+    
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <body ng-app="app" ng-controller="mainController">
+  <div class="jumbotron">
+    <h1> Dream Home App </h1>
+  </div>
+  <div class="container">
+    <div class="well card" ng-repeat="house in housing">
+      <img ng-src="{{house.img}}" alt='housepicture' height="420px">
+      <h3>{{house.address}}</h3>
+      <h4>{{house.cost | currency}}</h4>
+    </div>
+  </div>
+</body>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
